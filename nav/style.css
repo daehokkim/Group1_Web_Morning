@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  color: #fff;
+}
+.header {
+  padding: 0px 0px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #064469;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.tbl-cari {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 32px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.tbl-cari input {
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+}
+.tbl-cari:hover input {
+  width: 200px;
+}
