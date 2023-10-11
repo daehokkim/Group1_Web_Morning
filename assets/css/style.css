@@ -1,95 +1,102 @@
-/* Start Navbar */
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* .navbar{
   background-color: #064469;
 }
 
-.navbar .navbar-nav .nav-item a {
+.navbar .navbar-nav .nav-item a{
   color: #ffffff;
   margin-right: 10px;
 }
 
-.navbar-logo {
+.navbar-logo{
   width: 91px;
   height: 64px;
 }
 
-.navbar-toggler {
+.navbar-toggler{
   background-color: #ffffff;
 }
 
-.navbar-toggler:focus {
-  border-color: #ffffff;
+.navbar-toggler:focus{
+  border-color: #ffffff; 
   box-shadow: 0 0 5px 0 #ffffff;
 }
 
-.navbar .navbar-nav .nav-item a:hover {
+.navbar .navbar-nav .nav-item a:hover{
   color: #e6e6e6;
   font-weight: 700;
 }
 
-.navbar .navbar-nav .nav-item a:focus {
+.navbar .navbar-nav .nav-item a:focus{
   color: #ffffff;
   font-weight: bold;
 }
 
-.form-control {
+.form-control{
   border-radius: 5px;
 }
 
 .form-control:focus {
-  border-color: #ffffff;
+  border-color: #ffffff; 
   box-shadow: 0 0 5px 0 #ffffff;
 }
-/* End Navbar */
-
-/* Start Content */
-.judul-kategori {
+/* start detail artikel */
+#detail-artikel {
+  color: #000;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+#header-artikel {
   text-align: center;
+}
+#kategori-artikel
+{
   margin-top: 50px;
-  margin-bottom: 40px;
-  font-size: 36px;
-  font-weight: bold;
 }
+#judul-artikel {
+  margin: 20px 0px;
+  text-transform: capitalize;
+}
+.thumbnail-artikel {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+  margin: 25px 0;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+#isi-artikel {
+  margin-bottom: 100px;
+}
+#isi-artikel p {
+  text-align: justify;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+#isi-artikel p::first-letter {
+  margin-left: 35px;
+}
+/* End detail artikel */
 
-.card-container {
-  margin-bottom: 50px;
-}
 
-.card-container a {
-  text-decoration: none;
-  color: #000000;
+/* Start FaQ */
+#banner-faq {
+  background: url('/assets/image/bg-faq.jpeg');
+  height: 100vh;
+  background-size: cover;
 }
-
-.card {
-  border-radius: 30px;
-  box-shadow: 4px 4px 8px #e6e6e6;
+#banner-faq h1 {
+  font-size: calc(100px - 8vh);
+  padding-top: 30vh;
 }
-
-.card-title {
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+#qna .kiri button.accordion-button {
+  background: #c9d0d5;
+  margin-bottom: 25px;
 }
-
-.button-card {
-  width: 162px;
-  height: 47px;
-  border: 1px solid #064469;
-}
-
-.button-card:focus {
-  border-color: #064469;
-  box-shadow: 0 0 5px 0 #064469;
-}
-
-.button-card:hover {
-  background-color: #064469;
-  color: #ffffff;
-  font-weight: 700;
-}
-/* End Content */
+/* End FaQ */
 
 /* Start Footer */
 .bd-placeholder-img {
@@ -102,18 +109,17 @@
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+      font-size: 3.5rem;
   }
 }
 
 .b-example-divider {
   width: 100%;
   height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
   border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
 .b-example-vr {
@@ -123,7 +129,7 @@
 }
 
 .bi {
-  vertical-align: -0.125em;
+  vertical-align: -.125em;
   fill: currentColor;
 }
 
@@ -169,12 +175,12 @@
   display: block !important;
 }
 
-.footer-container {
+.footer-container{
   background-color: #064469;
   max-width: 100%;
 }
 
-.container div footer ul li a {
+.container div footer ul li a{
   color: #ffffff;
 }
 
@@ -184,12 +190,12 @@
   padding-bottom: 5px;
 }
 
-.footer-logo {
+.footer-logo{
   width: 91px;
   height: 91px;
 }
 
-footer ul li a:hover {
+footer ul li a:hover{
   color: #e6e6e6;
   font-weight: 700;
 }
