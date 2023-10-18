@@ -95,20 +95,24 @@
   color: #064469;
 }
 
-@media screen and (max-width: 576px) {
-  .link{
-      text-align: center;
-      margin: 0 2rem;
-  }
-  
-  .form-container{
-      width: 100%;
-  }
-}
-
 .form-container{
   width: 70%;
   margin: 50px auto;
+}
+
+@media screen and (max-width: 576px) {
+  .description-kategori{
+    width: 90%;
+  }
+  
+  .link{
+    text-align: center;
+    margin: 0 2rem;
+  }
+  
+  .form-container{
+    width: 100%;
+  }
 }
 
 .form-control{
@@ -125,6 +129,7 @@
   height: 50px;
   background-color: #064469;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .button-form:focus{
