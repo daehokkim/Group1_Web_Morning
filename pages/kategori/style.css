@@ -1,8 +1,11 @@
-/* ----------------
-      Font 
-------------------*/
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     font-family:'Poppins', sans-serif;
@@ -64,39 +67,29 @@ body{
     font-size: 36px;
     font-weight: bold;
 }
+
 .judul p{
     text-align: center;
     margin-top: -25px;
     font-size: 22px;
-    
 }
+
 .text-kategori h1{
-   padding-left: 45px;
+    padding-left: 45px;
     font-size: 28px;
     margin-top: 70px;
-}
-.card-container{
-    display: flex;
-    margin-top: -40px;
-    gap: 25px;
-    width: 100%;
-    padding: 30px;
-    overflow-x: scroll;
-    scroll-padding: 30px;
-    scroll-snap-type: none;
-
-    
+    padding-left: 4rem;
 }
 
-.card-container a{
-    text-decoration: none;
-    color: #000000;
+.cards-wrapper{
+    padding: 0 2rem;
 }
 
 .card{
+    border: none;
     border-radius: 30px;
-    box-shadow: 4px 4px 8px #e6e6e6;
-    
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    margin-right: 0.5em;
 }
 
 .card-title{
@@ -107,26 +100,74 @@ body{
     margin-bottom: 30px;
 }
 
-.button-card{
-    width: 162px;
-    height: 47px;
-    border: 1px solid #064469;
+.card-title a{
+    color: #000000;
+    text-decoration: none;
 }
 
-.button-card:focus{
-    border-color: #064469; 
-    box-shadow: 0 0 5px 0 #064469;
+.carousel-inner{
+    padding: 1em;
 }
 
-.button-card:hover{
-    background-color: #064469;
-    color: #ffffff;
-    font-weight: 700;
+.carousel-control-prev, .carousel-control-next{
+    background-color: #b1b1b1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.link a {
-   margin-left: 1190px;
+.carousel-control-prev span, .carousel-control-next span{
+    width: 1.5rem;
+    height: 1.5rem;
 }
+
+.link{
+    text-align: end;
+    margin: 1rem 4rem 2rem 0;
+}
+
+.link a{
+    text-decoration: none;
+    color: #056AA3;
+}
+
+.link a:hover{
+    font-weight: bold;
+    color: #064469;
+}
+
+@media screen and (min-width: 577px){
+    .cards-wrapper{
+        display: flex;
+    }
+    
+    .card{
+        margin: 0 0.5em;
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card:not(:first-child){
+        display: none;
+    }
+
+    .text-kategori h1{
+        font-size: 28px;
+        margin-top: 70px;
+        padding: 0 4rem;
+        text-align: center;
+    }
+
+    .link{
+        text-align: center;
+        margin: 1rem 4.5rem;
+    }
+    
+}
+
 /* End Content */
 
 /* Start Footer */
