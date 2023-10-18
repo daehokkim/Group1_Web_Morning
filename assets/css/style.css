@@ -96,6 +96,27 @@
   background: #c9d0d5;
   margin-bottom: 25px;
 }
+
+#qna .kiri button.accordion-button {
+  background: #c9d0d5;
+  margin-bottom: 25px;
+}
+
+#qna .kiri button.accordion-button:focus{
+  box-shadow: 0 0 8px 0 #b2c5d1;
+  color: #000000;
+}
+
+#qna .kanan button.accordion-button {
+  background: #c9d0d5;
+  margin-bottom: 25px;
+}
+
+#qna .kanan button.accordion-button:focus{
+  box-shadow: 0 0 8px 0 #b2c5d1;
+  color: #000000;
+}
+
 /* End FaQ */
 
 /* Start Footer */
