@@ -8,29 +8,19 @@
     Variables 
 ------------------*/
 :root{
-    --main-color :#e02f6b;
-    --main-hue: 208;
-    --blue : #0000ff;
+    /*  color   */
+    --white :#fff;
     --blue-dark : #18293c;
-    --orange :#ffa500;
-    --green-yellow : #cddc39;
-    --pink-light :#efa2b4;
-    --cyan-light :#aef1ee;
-    --white :#ffffff;
-    --text-color:#000;
-    --light-main-color:hsl(var(--main-hue), 91%, 55%);
     --input-text:#8c9aaf;
-    --white-alpha-40 :rgba(255,255,255,0.40);
-    --white-alpha-25 :rgba(255,255,255,0.25);
-    --backdrop-filter-blur:blur(5px);
+    --main-hue: 208;
     --input-bg:hsla(var(--main-hue),50%, 50%, 6.5%);
     --input-bg-hover:hsla(var(--main-hue),50%, 50%, 14%);
 
+    /*  Ukuran font  */
     --h1-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1rem;
 }
-
 
 /* ----------------
    Global Setting 
@@ -46,17 +36,6 @@
     outline: none;
     scroll-behavior: smooth;
 }
-body {
-   
-    background-color: #fff;
-    color: #fff;
-   
-   
-   
-  
-    
-}
-
 
 /* ----------------
       Header
@@ -104,49 +83,26 @@ body {
     box-shadow: 0 0 5px 0 #ffffff;
 }
 
-
 /* ----------------
        Home 
 ------------------*/
 section{
     padding: 75px;
 }
-.home{
-    position: relative;
-    height: 100vh;
-    width: 100%;
+.banner {
     background-image: linear-gradient(to left, rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(./assets/image/gunung.png);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    text-align: left;
+    position: relative;
     background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+    
 }
-.home-text h1{
-
-    font-family:'Poppins', sans-serif;
-    font-size: var(--h1-font);
-    font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--white);
-}
-.home-text p{
-
-    font-family:'Poppins', sans-serif;
-    font-size: var(--p-font);
-    font-weight: 500;
-    color: var(--white);
-    margin-top: -18px;
-    padding: 12px;
-}
-
 
 /* ----------------
       Layanan 
 ------------------*/
-
 .text h2{
     font-family:'Poppins', sans-serif;
     font-size: 25px;
@@ -207,17 +163,9 @@ section{
 /* ----------------
      Gunungku
 ------------------*/
-
-.gunungku-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 10rem;
-}
 .gunungku-img img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 .gunungku-text h2{
     font-size: 45px;
@@ -229,10 +177,14 @@ section{
     font-size: 22px;
     color: #484848;
 }
-
+.gunungku-text{
+    margin-left: 70px;
+    text-align: left;
+    
+}
 
 /* ----------------
-      Discover 
+    Top 3 Gunung
 ------------------*/
 .discover{
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.05),transparent);
@@ -295,13 +247,11 @@ section{
     background-image: url(assets/image/semeru.png);
     background-size: cover;
     background-position: center;
-   
 }
 .img-two{
     background-image: url(assets/image/merbabu.jpg);
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;  
 }
 .img-three{
     background-image: url(assets/image/rinjani.png);
@@ -331,7 +281,7 @@ section{
     color: black;
 }
 .container button{
-    background: #252525;
+    background:  #064469;
     color: #fff;
     padding: 8px 35px;
     border: none;
@@ -349,33 +299,6 @@ section{
 /* ----------------
       Contact 
 ------------------*/
-.contact{
-    width: 100%;
-    overflow: hidden;
-    background-color: var(--white);
-}
-.contact .container-contact{
-    height: 100vh;
-    min-height: 700px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-.contact .container-contact > div{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-.left{
-    width: 100%;
-    max-width: 80rem;
-    margin: 0 auto;
-
-    padding: 65px 1.5rem 0;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    position: relative;
-}
 .contact-heading h1{
     font-weight: 600;
     color: var(--blue-dark);
@@ -383,12 +306,14 @@ section{
     line-height: 0.9;
     white-space: nowrap;
     margin-bottom: 1.2rem;
+    text-align: left;
 }
 
 .contact-heading p{
     color: #484848;
     line-height: 1.5;
     font-size: 21px;
+    text-align: left;
 
 }
 .contact-form{
@@ -463,22 +388,9 @@ textarea.contact-input ~ .icon{
     display: grid;
     width: 100%;
 }
-.btn{
-    display: inline-block;
-    padding: 1.1rem 18rem;
-    background-color: var(--light-main-color);
-    color: black;
-    border-radius: 20px;
-   font-weight: 500;
-   font-size: 1rem;
-   cursor: pointer;
-}
-
-.right{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    overflow: hidden;
-    pointer-events: none;
+.button {
+    height: 50px;
+   
 }
 .image-wrapper{
     position: relative;
@@ -510,7 +422,6 @@ textarea.contact-input ~ .icon{
         font-size: 10.5rem;
     }
 }
-
 
 .b-example-divider {
     width: 100%;
